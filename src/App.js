@@ -67,7 +67,7 @@ function App() {
       // const data= JSON.stringify({
       //   "question": question
       // })
-      const res = await fetch("https://sevend-assignment-backend.onrender.com//api/completion", options);
+      const res = await fetch("https://sevend-assignment-backend.onrender.com/api/completion", options);
       const data = await res.json();
       // if(data.status) {
       console.log("first", data)

@@ -30,7 +30,7 @@ const SpeechToText = ({callback}) => {
                 console.log(formData)
                 // console.log(first)
                 try {
-                    const response = await axios.post('https://sevend-assignment-backend.onrender.com//api/speech-to-text', formData, {
+                    const response = await axios.post('https://sevend-assignment-backend.onrender.com/api/speech-to-text', formData, {
                         headers: {
                             'Content-Type': 'multipart/form-data'
                         }
