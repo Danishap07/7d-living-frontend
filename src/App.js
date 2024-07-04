@@ -112,7 +112,7 @@ function App() {
         <ul className="feed" ref={listRef}>
           {currentChats.map((e, i) => <li key={i}>
             <div className="user" style={{ display: "flex" }}> <p>User: </p> <p > &nbsp;{e.user.content}</p></div>
-            <div className="assistant" style={{ display: "flex" }}> <p>Assistant:&nbsp;</p>{!new_propt? <p>{e.assistant.content}</p>:<Typewriter text={e.assistant.content} speed={30} callback={() => set_new_prompt(false)} />}</div>
+            <div className="assistant" style={{ display: "flex" }}> <p>Assistant:&nbsp;</p>{i !== currentChats.length-1 ? <p>{e.assistant.content}</p>:<Typewriter text={e.assistant.content} speed={30} callback={() => set_new_prompt(false)} />}</div>
           </li>)}
         </ul>
         <h1 className='heading'>ChatGPT for 7D Living</h1>

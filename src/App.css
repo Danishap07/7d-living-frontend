@@ -45,6 +45,8 @@ body {
 .record-button {
   width: 40px;
   height: 40px;
+  margin-top: 8px;
+  margin-right: 4px;
 }
 
 button {
